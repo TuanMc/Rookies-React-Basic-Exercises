@@ -4,7 +4,9 @@ import React from 'react';
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
-function App() {
+function App() { // Should be class component
+  // Add a state with property 'bootcamp' here
+  
   return (
     <React.Fragment>
       {/* <div className="App">
@@ -24,7 +26,7 @@ function App() {
         </header>
       </div> */}
       <Navbar/>
-      <Home name="Rookies"/>
+      <Home name="Rookies"/> <!-- Replace this value by this.state.bootcamp -->
     </React.Fragment>
   );
 }
